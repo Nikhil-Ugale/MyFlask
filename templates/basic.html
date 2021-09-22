@@ -13,11 +13,19 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        <!--template variable-->
         <h1>Hello {{name}}</h1>
         <h1>{{letters}}</h1>
         <h2>Welcome to my Site!</h2>
         <h3>here is a  pic of puppy!</h3>
+        <!--putting image in our website-->
         <img src="../static/puppy_pic.jpeg" alt="">
+        <!--control flow,one item of list at a time-->
+        <ul>
+            {% for number in mylist %}
+            <li>{{number}}</li>
+            {% endfor %} <!--must have to give endfor-->
+        </ul>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

@@ -8,7 +8,8 @@ def index():
     name = 'sir'
     letters = list(name)
     #hi there
-    return render_template('basic.html',name=name,letters=letters)
+    mylist = [1,2,3,4,5]
+    return render_template('basic.html',name=name,letters=letters,mylist=mylist)
 
 if __name__ == '__main__':
     app.run(debug=True)
