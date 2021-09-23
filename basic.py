@@ -9,7 +9,8 @@ def index():
     letters = list(name)
     #hi there
     mylist = [1,2,3,4,5]
-    return render_template('basic.html',name=name,letters=letters,mylist=mylist)
+    puppies = ['rufus','sammy','jake']
+    return render_template('basic.html',name=name,letters=letters,mylist=mylist,puppies=puppies)
 
 if __name__ == '__main__':
     app.run(debug=True)

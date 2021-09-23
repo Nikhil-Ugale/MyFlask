@@ -26,6 +26,12 @@
             <li>{{number}}</li>
             {% endfor %} <!--must have to give endfor-->
         </ul>
+        <!--if else -->
+        {%if 'rufus' in puppies%}
+            <p>Found you rufus!</p>
+        {%else%} 
+            <p>Where are you rufus</p>
+        {%endif%}
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
