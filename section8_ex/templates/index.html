@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <p>Welcome to Puppy User Name Check</p>
+    <p>Let's see if your user name is secure!</p>
+    <p>Fill out the form below with a User Name that has these restraints</p>
+
+    {% for item in mylist %} 
+    <ul>
+        <li>{{item}}</li>
+    </ul>
+    {% endfor %} 
+
+    <form action="{{url_for('report')}}">
+        <label for="username">UserName</label>
+        <input type="text" name='username'>
+        <input type="submit" value="Submit Form">
+    </form>
+
+</div>
+
+
+{% endblock %}
